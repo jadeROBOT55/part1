@@ -102,11 +102,31 @@
                               </block>
                             </value>
                             <statement name="DO">
-                              <block type="movement_reverse" id="455"></block>
+                              <block type="movement_reverse" id="455">
+                                <next>
+                                  <block type="robot_delay" id="472" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="473">
+                                        <field name="NUM">200</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="474">
+                                        <next>
+                                          <block type="robot_delay" id="475" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="476">
+                                                <field name="NUM">100</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
                             </statement>
-                            <next>
-                              <block type="movement_stop" id="466"></block>
-                            </next>
                           </block>
                         </next>
                       </block>

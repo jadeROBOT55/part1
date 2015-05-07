@@ -102,12 +102,11 @@
                               </block>
                             </value>
                             <statement name="DO">
-                              <block type="movement_reverse" id="455">
-                                <next>
-                                  <block type="movement_stop" id="466"></block>
-                                </next>
-                              </block>
+                              <block type="movement_reverse" id="455"></block>
                             </statement>
+                            <next>
+                              <block type="movement_stop" id="466"></block>
+                            </next>
                           </block>
                         </next>
                       </block>

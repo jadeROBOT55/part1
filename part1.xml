@@ -94,6 +94,18 @@
                             <field name="VAR">distance</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="controls_repeat" id="441" inline="true">
+                            <value name="TIMES">
+                              <block type="variables_get" id="445">
+                                <field name="VAR">distance</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="movement_reverse" id="455"></block>
+                            </statement>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
